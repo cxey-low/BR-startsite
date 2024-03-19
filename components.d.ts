@@ -16,5 +16,9 @@ declare module 'vue' {
     ElOption: typeof import('element-plus/es')['ElOption']
     ElSelect: typeof import('element-plus/es')['ElSelect']
     MainBar: typeof import('./src/components/SearchBar/MainBar.vue')['default']
+    MultiNumber: typeof import('./src/components/Time/MultiNumber.vue')['default']
+    SeparateNumbers: typeof import('./src/components/Time/SeparateNumbers.vue')['default']
+    TimeDisplay: typeof import('./src/components/Time/TimeDisplay.vue')['default']
+    WallPaper: typeof import('./src/components/WallpaperGets/WallPaper.vue')['default']
   }
 }

@@ -2,13 +2,9 @@
 import { ref } from 'vue'
 import { getURL, SearchSite, SiteSelection } from './search'
 // import { Icon } from '@iconify/vue';
-import $ from 'jquery'
+// import $ from 'jquery'
 import { Search } from '@element-plus/icons-vue'
 import { ElInput, ElSelect, ElOption, ElButton } from 'element-plus'
-
-$((): any => {
-    $('#search').height(Number($('#icon').height()))
-})
 
 const select = ref(SearchSite.BING)
 

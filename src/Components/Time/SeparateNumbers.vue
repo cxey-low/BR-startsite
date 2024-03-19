@@ -2,7 +2,7 @@
 import { Icon } from '@iconify/vue'
 import { defineProps, ref, computed } from 'vue'
 const prop = defineProps({
-    number: Number
+    number: String
 })
 
 const icon = computed(() => {

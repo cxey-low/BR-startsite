@@ -3,21 +3,19 @@ import { defineProps, ref, computed } from 'vue'
 import SeparateNumbers from './SeparateNumbers.vue'
 
 const prop = defineProps({
-    number: Number
+    number: String
 })
-
-function to2Number() {
-    let number1 = prop.number % 10
-    let number2 = prop.number - number1
-
-    return [number1, number2]
-}
 
 const icon = computed(() => {
-    return ref(to2Number())
+    if (!prop.number) {
+        return ref(['0','0'])
+    }
+
+    return ref([prop.number.substring(0, 1), prop.number.substring(1, 2)])
 })
 </script>
+
 <template>
+    <SeparateNumbers :number="icon.value[0]" />
     <SeparateNumbers :number="icon.value[1]" />
-    <SeparateNumbers :number="icon.value[2]" />
 </template>
