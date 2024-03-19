@@ -8,16 +8,17 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElCol: typeof import('element-plus/es')['ElCol']
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElFooter: typeof import('element-plus/es')['ElFooter']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElMain: typeof import('element-plus/es')['ElMain']
     ElOption: typeof import('element-plus/es')['ElOption']
-    ElRow: typeof import('element-plus/es')['ElRow']
     ElSelect: typeof import('element-plus/es')['ElSelect']
-    ElTag: typeof import('element-plus/es')['ElTag']
     MainBar: typeof import('./src/components/SearchBar/MainBar.vue')['default']
+    MultiNumber: typeof import('./src/components/Time/MultiNumber.vue')['default']
+    SeparateNumbers: typeof import('./src/components/Time/SeparateNumbers.vue')['default']
+    TimeDisplay: typeof import('./src/components/Time/TimeDisplay.vue')['default']
+    WallPaper: typeof import('./src/components/WallpaperGets/WallPaper.vue')['default']
   }
 }
