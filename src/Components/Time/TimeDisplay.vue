@@ -35,7 +35,6 @@ onMounted(() => {
         minute.value = getTime().minute
     }, 1000 * 60)
 })
-
 </script>
 <template>
     <MultiNumber :number="time.value[0]"></MultiNumber>

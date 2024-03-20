@@ -7,14 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
-    ElInput: typeof import('element-plus/es')['ElInput']
-    ElMain: typeof import('element-plus/es')['ElMain']
-    ElOption: typeof import('element-plus/es')['ElOption']
-    ElSelect: typeof import('element-plus/es')['ElSelect']
     MainBar: typeof import('./src/components/SearchBar/MainBar.vue')['default']
     MultiNumber: typeof import('./src/components/Time/MultiNumber.vue')['default']
     SeparateNumbers: typeof import('./src/components/Time/SeparateNumbers.vue')['default']
