@@ -10,9 +10,6 @@ const props = defineProps({
 const img = computed(() => {
     return ref(getICO(props.site || ''))
 })
-
-
-
 </script>
 <template>
     <ElImage :src="img.value" />

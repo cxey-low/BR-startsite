@@ -14,17 +14,16 @@ let imgURL = ref(prop.img)
 function getBingURL() {
     fetch(BingURL, {
         headers: {
-            'Access-Control-Allow-Origin': BingURL,
+            'Access-Control-Allow-Origin': BingURL
         },
         mode: 'no-cors'
-
     }).then((response) => {
         response
             .json()
             .then((json) => {
                 imgURL.value = JSON.parse(json).images[0].url
             })
-            .catch(() => { })
+            .catch(() => {})
     })
 }
 
