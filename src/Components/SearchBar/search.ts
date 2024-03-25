@@ -1,41 +1,34 @@
-export enum SearchSite {
-    MCMOD = 'mcmod',
-    MC_WIKI = 'mc_wiki',
-    BING = 'bing',
-    GITHUB = 'github'
-}
-
 export const DefaultSearch = new Map()
-DefaultSearch.set(SearchSite.MCMOD, 'https://search.mcmod.cn/s?key=$')
-DefaultSearch.set(SearchSite.MC_WIKI, 'https://zh.minecraft.wiki/?search=$')
-DefaultSearch.set(SearchSite.BING, 'https://cn.bing.com/search?q=$')
-DefaultSearch.set(SearchSite.GITHUB, 'https://github.com/search?q=$&type=repositories')
+DefaultSearch.set('mcmod', 'https://search.mcmod.cn/s?key=$')
+DefaultSearch.set('mc_wiki', 'https://zh.minecraft.wiki/?search=$')
+DefaultSearch.set('bing', 'https://cn.bing.com/search?q=$')
+DefaultSearch.set('github', 'https://github.com/search?q=$&type=repositories')
 
-export function getURL(input: string, type: SearchSite) {
+export function getURL(input: string, type: String) {
     const url = DefaultSearch.get(type)
     return url.replace('$', input)
 }
 
 interface SelectionNote {
-    value: SearchSite
+    value: string
     label: string
 }
 
 export const SiteSelection: SelectionNote[] = [
     {
-        value: SearchSite.MCMOD,
+        value: 'mcmod',
         label: 'mcmod'
     },
     {
-        value: SearchSite.BING,
+        value: 'bing',
         label: 'bing'
     },
     {
-        value: SearchSite.MC_WIKI,
+        value: 'mc_wiki',
         label: 'mc_wiki'
     },
     {
-        value: SearchSite.GITHUB,
+        value: 'github',
         label: 'github'
     }
 ]
