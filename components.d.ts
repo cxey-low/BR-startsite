@@ -7,8 +7,10 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    IconList: typeof import('./src/components/BookmarkSite/IconList.vue')['default']
     MainBar: typeof import('./src/components/SearchBar/MainBar.vue')['default']
     MultiNumber: typeof import('./src/components/Time/MultiNumber.vue')['default']
+    SeparateIcon: typeof import('./src/components/BookmarkSite/SeparateIcon.vue')['default']
     SeparateNumbers: typeof import('./src/components/Time/SeparateNumbers.vue')['default']
     TimeDisplay: typeof import('./src/components/Time/TimeDisplay.vue')['default']
     WallPaper: typeof import('./src/components/WallpaperGets/WallPaper.vue')['default']
