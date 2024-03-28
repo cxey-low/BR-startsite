@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ConfigButton: typeof import('./src/components/Config/ConfigButton.vue')['default']
     IconList: typeof import('./src/components/BookmarkSite/IconList.vue')['default']
     MainBar: typeof import('./src/components/SearchBar/MainBar.vue')['default']
     MultiNumber: typeof import('./src/components/Time/MultiNumber.vue')['default']
