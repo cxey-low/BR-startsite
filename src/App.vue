@@ -6,6 +6,7 @@ import TimeDisplay from './Components/Time/TimeDisplay.vue'
 import WallPaper from './Components/WallpaperGets/WallPaper.vue'
 import img from './assets/images/LimeStartPage.jpg'
 import SeparateIcon from './Components/BookmarkSite/SeparateIcon.vue'
+import ConfigButton from './Components/Config/ConfigButton.vue'
 </script>
 <template>
     <WallPaper :img="img" />
@@ -24,7 +25,9 @@ import SeparateIcon from './Components/BookmarkSite/SeparateIcon.vue'
                     <ElCol :span="8"> </ElCol>
                 </ElRow>
             </el-main>
-            <el-footer>Footer</el-footer>
+            <el-footer>
+                <ConfigButton />
+            </el-footer>
         </el-container>
     </div>
 </template>
