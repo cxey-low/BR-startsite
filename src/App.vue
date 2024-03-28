@@ -1,18 +1,14 @@
 <script setup lang="ts">
 import MainBar from './Components/SearchBar/MainBar.vue'
-import '@/assets/styles/bootstrap.css'
 import 'element-plus/dist/index.css'
 import { ElContainer, ElHeader, ElMain, ElFooter, ElCol, ElRow } from 'element-plus'
 import TimeDisplay from './Components/Time/TimeDisplay.vue'
 import WallPaper from './Components/WallpaperGets/WallPaper.vue'
-
-
-
-
-
+import img from './assets/images/LimeStartPage.jpg'
+import SeparateIcon from './Components/BookmarkSite/SeparateIcon.vue'
 </script>
 <template>
-    <WallPaper />
+    <WallPaper :img="img" />
     <div class="common-layout">
         <el-container>
             <el-header>Header</el-header>
